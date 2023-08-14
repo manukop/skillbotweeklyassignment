@@ -1,0 +1,20 @@
+fast. lib is a timing library file.
+It is vastly used in industries to get the timing, power, and constraints of the tested design. 
+fast. lib contains the number of cells, Area of the cell, Voltage, Current, leakage_power, capacitive_load, etc...
+The functions are generated for the related pins on the array using a delay template.
+This file will show the leakage power in milliwatts, current in nanoamperes, and voltage in volts by default. 
+In this File, we have Functional expressions  which  was implemented in RTL by an user in their design.
+functional/regular expression means logical or arthematic operations to do some real time operations like Full adder.
+fast.lib file is used for vetrification purpose after synthesis process.
+The timing cell contains array template. Array can be M*N. The array contains indexes. Indexes is used to get the timing delay for particular timings.
+This fast.lib file is used in Electronic design automation tools.
+This file have applied voltage(maximum voltage),leakage power, current rating , rise time , And fall time of the RTL file .
+This fast lib file is used to fabricate a chip using their own library by understanding consumers fast.lib file.
+pins can be configured with indexes and their values using delay template. delay template is used because we can access the index values in large number with less time in matrix method
+fast lib files have number of designs inside it . Example: ADDFHXL.
+we can access the any part of the file or line of the files using TCL script.
+This file is used to analyze the timing, power , area constraints and user can optimize the costraints manually.
+The global cell is used to call the instances in fast.lib file.
+In fast.lib file \ is used for ignoring the index values.
+we are using (gpdk045wc)45 nanometer cmos library wc means worst case pd means physical design.
+The fast.lib file can reduce time for verification design engineers for verification and physical design engineers can optimize in less time.
